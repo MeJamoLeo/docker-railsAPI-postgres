@@ -1,25 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Docker関連のコマンド
+```bash
+# コンテナをビルドする（パソコンを作る）
+docker-compose build
 
-Things you may want to cover:
+# コンテナを立ち上げる（電源を入れる）
+# docker-compose up <コンテナ名> <オプション>
+docker-compose up web -d
 
-* Ruby version
+# コンテナを止める（電源を切る）
+docker-compose down
 
-* System dependencies
+# コンテナに入り，bashを操作する(ターミナルを起動する）
+docker-compose exec web bash 
 
-* Configuration
+# railsのサーバーを起動する．
+rails s -p 3000 -b '0.0.0.0'
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # docker-railsAPI-postgres
